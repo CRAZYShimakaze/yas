@@ -159,7 +159,8 @@ impl GenshinArtifactScanner {
 
         info!("物品信息: {}", s);
 
-        if s.starts_with(item_name) {
+        // if s.starts_with(item_name) {
+        if false {
             let chars = s.chars().collect::<Vec<char>>();
             let count_str = chars[4..chars.len() - 5].iter().collect::<String>();
             Ok(match count_str.parse::<usize>() {
